@@ -1,3 +1,12 @@
+:root {
+  --background: #F3F3F3;
+  --block: #FFFFFF;
+  --highlight: #DE353C;
+  --header: #3c1874;
+  --muted: #932432;
+  --text: #283747;
+}
+
 .row-header{
   margin:0px auto;
   padding:0px auto;

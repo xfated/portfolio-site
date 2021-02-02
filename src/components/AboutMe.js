@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Timeline from './TimelineComponent';
+import Timeline from './Timeline';
 
 const AboutMe = (props) => {
     return(

@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutMe from './AboutMe';
-import Header from './HeaderComponent';
+import Header from './Header';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 
 function Main() {

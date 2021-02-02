@@ -1,0 +1,7 @@
+.theme-background {
+    background: var(--background);
+}
+
+.timeline-header {
+    color: var(--header);
+}
