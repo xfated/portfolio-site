@@ -5,3 +5,13 @@
 .timeline-header {
     color: var(--header);
 }
+
+.timeline-desc {
+    cursor: pointer;
+}
+
+.desc-button {
+    background: var(--block);
+    color: var(--text);
+    border-style: none;
+}

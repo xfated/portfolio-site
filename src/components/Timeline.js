@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.css';
-import { Experience } from '../profile/experience.js'
+import { Experience } from '../profile/experience.js';
+import { Button } from 'reactstrap';
 
 
 const block = getComputedStyle(document.documentElement).getPropertyValue("--block");
@@ -13,34 +14,46 @@ const muted = getComputedStyle(document.documentElement).getPropertyValue("--mut
 const text = getComputedStyle(document.documentElement).getPropertyValue("--text");
 
 class Timeline extends Component {
-
+    
     constructor(props) {
         super(props);
 
+        // Get list for experience 
+        const numExp = Experience.length;
+        const expList = new Array(numExp);
+        for (var i =0; i < numExp; i ++) { expList[i] = false; }
+
         this.state = {
-            isHovering: false,
+            experienceClicked: expList
         };
 
-        this.handleMouseHover = this.handleMouseHover.bind(this);
+        this.toggleExperienceState = this.toggleExperienceState.bind(this);
     }
 
-    handleMouseHover() {
-        this.setState(this.toggleHoverState);
-    }
-
-    toggleHoverState(state){
-        return {
-            isHovering: !state.isHovering
-        }
-    }
+    toggleExperienceState = (i) => {
+        this.setState(state => {
+            const list = state.experienceClicked.map((item, j) => {
+                if (j===i){
+                    return !item;
+                } else {
+                    return item;
+                }
+            });
+            return {
+                experienceClicked: list,
+            };
+        });
+    };
 
     render() {
-        const TimelineElements = Experience.map((exp) => {
+        const TimelineElements = Experience.map((exp, index) => {
             const desc = exp.description.split('\n').map((line) => {
                 return (
                     <span>{line}<br /></span>
                 )
             });
+
+
             return(
                 <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -49,16 +62,15 @@ class Timeline extends Component {
                         contentArrowStyle={{ borderRight: `7px solid ${block}` }}
                         date={exp.date}
                         iconStyle={{ background: `${muted}`, color: `${highlight}` }}
-                        
+                        iconOnClick={() => this.toggleExperienceState(index)}
                     >
-                        <div className="row"
-                            onMouseEnter={this.handleMouseHover}
-                            onMouseLeave={this.handleMouseHover}>
+                        <div className="row">
                             <div className="col-12 col-md-8">
                                 <h4 className="vertical-timeline-element-title timeline-header">{exp.title}</h4>
                                 <h6 className="vertical-timeline-element-subtitle timeline-header"><i>{exp.location}</i></h6>
+                                
                                 <div>
-                                { this.state.isHovering && 
+                                { this.state.experienceClicked[index] && 
                                     <p>
                                     {desc}
                                     </p>
@@ -67,6 +79,21 @@ class Timeline extends Component {
                             </div>
                             <div className="d-none d-md-block col-md-4">
                                 
+                            </div>
+                            <div className="col-12">
+                                <div className="timeline-desc text-center"
+                                    onClick={() => this.toggleExperienceState(index)} >
+                                    <Button size="block" className="ml-auto desc-button">
+                                        <small>
+                                            { !this.state.experienceClicked[index] && 
+                                                <i class="fa fa-angle-down"></i>
+                                            }
+                                            { this.state.experienceClicked[index] && 
+                                                <i class="fa fa-angle-up"></i>
+                                            }
+                                        </small>
+                                    </Button>
+                                </div> 
                             </div>
                         </div>
                     </VerticalTimelineElement>
