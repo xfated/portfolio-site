@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import './Timeline.css';
 import { Experience } from '../profile/experience.js';
 import { Button } from 'reactstrap';
-
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 const block = getComputedStyle(document.documentElement).getPropertyValue("--block");
 const background = getComputedStyle(document.documentElement).getPropertyValue("--background");
@@ -70,11 +70,15 @@ class Timeline extends Component {
                                 <h6 className="vertical-timeline-element-subtitle timeline-header"><i>{exp.location}</i></h6>
                                 
                                 <div>
-                                { this.state.experienceClicked[index] && 
-                                    <p>
-                                    {desc}
-                                    </p>
-                                }
+                                    <TransitionGroup component={null}>
+                                        { this.state.experienceClicked[index] && 
+                                            <CSSTransition classNames="desc" timeout={300}>
+                                                <p>
+                                                {desc}
+                                                </p>
+                                            </CSSTransition>
+                                        }
+                                    </TransitionGroup>
                                 </div>
                             </div>
                             <div className="d-none d-md-block col-md-4">

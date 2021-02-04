@@ -14,4 +14,48 @@
     background: var(--block);
     color: var(--text);
     border-style: none;
+
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+.desc_button.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.desc-button:hover{
+    background-color: #fff;
+    color: var(--text);
+    text-decoration: none;
+    border-style: none;
+    outline: none;
+    border: 0;
+}
+.desc-button:hover, .desc-button:focus, .desc-button:active{
+    background-color: #fff !important;
+    color: var(--text);
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.desc-enter {
+    opacity: 0.01;
+    transform: translate(0, -50px);
+}
+  
+.desc-enter-active {
+    opacity: 1;
+    transform: translate(0,0);
+    transition: all 300ms;
+}
+  
+.desc-exit {
+    opacity: 1;
+    transform: translate(0,0);
+}
+  
+.desc-exit-active {
+    opacity: 0.01;
+    transform: translate(0, -20px);
+    transition: all 50ms;
 }
