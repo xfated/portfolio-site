@@ -42,7 +42,7 @@ export const Experience = [
                     "- Liaised with external parties to organize 2 Fusion360 workshops, and industrial visit to GlobalFoundries.\n" +
                     "- Liaised with ECE Department for matters on outreach.\n" +
                     "- Organized webinar on cloud computing to introduce students to the industry.",
-        logo: ""
+        logo: "assets/images/ececlub_logo.png"
     },
     {
         title: "Teaching Assistant",
@@ -51,7 +51,7 @@ export const Experience = [
         description: "Teaching Assistant for the module - ENGINEERING PRINCIPLES AND PRACTICE I for computer engineering. (Module Code - CG1111) \n" +
                         "- Supervised and facilitated freshmen in lab studio activities. \n" +
                         "- Explained content and clarified doubts to improve students' understanding of concepts.",
-        logo: ""
+        logo: "assets/images/nus_logo.png"
     },
     {
         title: "Marketing Director",
@@ -60,7 +60,7 @@ export const Experience = [
         description: "- Led a group of 7 to manage sponsorship for a major Freshmen Orientation Camp. \n" +
                     "- Negotiated with external companies and secured more than $4000 worth of sponsorship. \n" +
                     "- Liaised with sponsors to complete deliverables during the camp.",
-        logo: ""
+        logo: "assets/images/nus_logo.png"
     },
     {
         title: "Project Management Intern",
@@ -71,6 +71,6 @@ export const Experience = [
                     "- Facilitated discussions to ensure clear understanding between vendor and users.\n" +
                     "- Tested software application to identify defects to verify feasibility of project deliverable.\n" +
                     "- Scoped and refined collaboration agreement to meet project requirements",
-        logo: ""
+        logo: "assets/images/spgroup_logo.png"
     }
 ]

@@ -109,7 +109,7 @@ class Timeline extends Component {
                 <VerticalTimeline className="vertical-timeline theme-background" layout='1-column-left'>
                     {TimelineElements}
                     <VerticalTimelineElement
-                        iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                        iconStyle={{ background: `${muted}`, color: '#fff' }}
                     />
                 </VerticalTimeline>
             </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { MyInfo } from '../profile/myinfo';
+import Decrypt from './Decrypt';
 
 class Header extends Component {
 
@@ -27,8 +28,10 @@ class Header extends Component {
         return(
             <React.Fragment>
                 <Jumbotron style={{ backgroundImage:'assets/images/profile_pic.jpg', backgroundSize: 'cover' }}>
-                    <Container>
-                        <h1 className="display-3">{this.state.user.name}</h1>
+                    <Container className="text-center">
+                        <h1 className="display-3">
+                            <Decrypt text={this.state.user.name} time='1000'/>
+                        </h1>
                         <p className="lead">{this.state.user.description}</p>
                         
                     </Container>
