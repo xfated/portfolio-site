@@ -61,8 +61,9 @@ class Timeline extends Component {
                                 borderTop: `3px solid ${muted}` }}
                         contentArrowStyle={{ borderRight: `7px solid ${block}` }}
                         date={exp.date}
-                        iconStyle={{ background: `${muted}`, color: `${highlight}` }}
+                        iconStyle={{background: `#ffffff`}}
                         iconOnClick={() => this.toggleExperienceState(index)}
+                        icon={<img className='logo' src={exp.logo} alt='' />}
                     >
                         <div className="row">
                             <div className="col-12 col-md-8">

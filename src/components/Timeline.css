@@ -59,3 +59,25 @@
     transform: translate(0, -20px);
     transition: all 50ms;
 }
+
+.vertical-timeline--one-column-left .vertical-timeline-element-icon img {
+    width: 40px;
+    height: 40px;
+}
+  
+@media only screen and (min-width: 1170px) {
+    .vertical-timeline--one-column-left .vertical-timeline-element-icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* The line */
+.vertical-timeline::before {
+    background: var(--muted);
+}
+  
+/* Icon container's border */
+.vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px var(--muted), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
