@@ -23,7 +23,7 @@ export const Experience = [
         description: "- Built webhook service for chatbot backend architecture. \n" +
                     "- Optimized and automated testing and provisioning process for embedded devices to shorten time required by 500%. \n" +
                     "- Integration of facial recognition device into smart office using REST API and MQTT frameworks.",
-        logo: "assets/images/govtech_logo2.gif"
+        logo: "assets/images/govtech_logo.gif"
     },
     {
         title: "Deputy Project Manager NUS RoboMaster ",
@@ -32,7 +32,7 @@ export const Experience = [
         description: "- Developed real-time software architecture for robots to interface with different sensors and motors. \n" +
                         "- Implemented control loops for precise movement control. \n" +
                         "- Embedded systems development in an ARM Cortex microcontroller.",
-        logo: ""
+        logo: "assets/images/luminus_logo.png"
     },
     {
         title: "Academics Director",
