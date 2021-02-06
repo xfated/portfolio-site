@@ -25,9 +25,9 @@ const Decrypt = (props) => {
     const updateWord = (letter, time) => {
         return setTimeout(() => {
             // Update new string for remainder
-            var remainder = text.substr(count + 1,word.length);
-            for (var i = 0; i < remainder.length; i++){
-                remainder = remainder.replaceAt(i, letters[Math.floor(Math.random() * num_letters)]);
+            var remainder = '';
+            for (var i = 0; i < word.length - count - 1; i++){
+                remainder = remainder +  letters[Math.floor(Math.random() * num_letters)];
             }
             // Update string with next letter + remaining shuffled letters
             setText(text.substr(0,count) + letter + remainder);

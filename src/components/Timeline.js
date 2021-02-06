@@ -5,13 +5,7 @@ import './Timeline.css';
 import { Experience } from '../profile/experience.js';
 import { Button } from 'reactstrap';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
-const block = getComputedStyle(document.documentElement).getPropertyValue("--block");
-const background = getComputedStyle(document.documentElement).getPropertyValue("--background");
-const highlight = getComputedStyle(document.documentElement).getPropertyValue("--highlight");
-const header = getComputedStyle(document.documentElement).getPropertyValue("--header");
-const muted = getComputedStyle(document.documentElement).getPropertyValue("--muted");
-const text = getComputedStyle(document.documentElement).getPropertyValue("--text");
+import { Theme } from '../profile/theme';
 
 class Timeline extends Component {
     
@@ -57,11 +51,11 @@ class Timeline extends Component {
             return(
                 <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: `${block}`, color: `${text}`, 
-                                borderTop: `3px solid ${muted}` }}
-                        contentArrowStyle={{ borderRight: `7px solid ${block}` }}
+                        contentStyle={{ background: `${Theme.block}`, color: `${Theme.text}`, 
+                                borderTop: `3px solid ${Theme.muted}` }}
+                        contentArrowStyle={{ borderRight: `7px solid ${Theme.block}` }}
                         date={exp.date}
-                        iconStyle={{background: `#ffffff`}}
+                        iconStyle={{background: `${Theme.background}`}}
                         iconOnClick={() => this.toggleExperienceState(index)}
                         icon={<img className='logo' src={exp.logo} alt='' />}
                     >
@@ -73,7 +67,7 @@ class Timeline extends Component {
                                 <div>
                                     <TransitionGroup component={null}>
                                         { this.state.experienceClicked[index] && 
-                                            <CSSTransition classNames="desc" timeout={300}>
+                                            <CSSTransition classNames="desc" timeout={200}>
                                                 <p>
                                                 {desc}
                                                 </p>
@@ -109,7 +103,7 @@ class Timeline extends Component {
                 <VerticalTimeline className="vertical-timeline theme-background" layout='1-column-left'>
                     {TimelineElements}
                     <VerticalTimelineElement
-                        iconStyle={{ background: `${muted}`, color: '#fff' }}
+                        iconStyle={{ background: `${Theme.muted}`, color: '#fff' }}
                     />
                 </VerticalTimeline>
             </div>

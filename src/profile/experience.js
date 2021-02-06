@@ -48,7 +48,7 @@ export const Experience = [
         title: "Teaching Assistant",
         location: "National University of Singapore",
         date: "Aug 2019 - Dec 2019",
-        description: "Teaching Assistant for the module - ENGINEERING PRINCIPLES AND PRACTICE I for computer engineering. (Module Code - CG1111) \n" +
+        description: "Teaching Assistant for the module - ENGINEERING PRINCIPLES AND PRACTICE I for computer engineering. (Module Code - CG1111) \n\n" +
                         "- Supervised and facilitated freshmen in lab studio activities. \n" +
                         "- Explained content and clarified doubts to improve students' understanding of concepts.",
         logo: "assets/images/nus_logo.png"

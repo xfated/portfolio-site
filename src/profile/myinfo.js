@@ -1,5 +1,7 @@
 export const MyInfo = 
 {
-    name: "Tay Kai Yang",
-    description: "Electrical Engineering Penultimate Student!"
+    firstname: "Kai Yang",
+    lastname: "Tay",
+    description: "An Electrical Engineering Penultimate Student.\n"+
+        "Here to make a change."
 }

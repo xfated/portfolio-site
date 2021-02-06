@@ -7,25 +7,3 @@
   --text: #283747;
 }
 
-.row-header{
-  margin:0px auto;
-  padding:0px auto;
-}
-
-.row-content {
-  margin:0px auto;
-  padding: 50px 0px 50px 0px;
-  border-bottom: 1px ridge;
-  min-height:400px;
-}
-
-.jumbotron {
-  padding:70px 30px 70px 30px;
-  margin:0px auto;
-  background: #add8e9;
-  color:rgb(40, 41, 38);
-}
-
-.timeline-header{
-  color:rgb(18, 18, 22);
-}
