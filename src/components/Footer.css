@@ -15,7 +15,19 @@
     font-size: 1.4rem;
 }
 
- 
+@keyframes pivot {
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+.quote-icon {
+    animation: pivot 5s infinite alternate;
+}
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
     .quote {font-size:1.5rem;} /*1rem = 16px*/
