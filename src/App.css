@@ -5,5 +5,51 @@
   --header: #3c1874;
   --muted: #932432;
   --text: #283747;
+  --icon: #afe3f8;
 }
 
+@font-face {
+  font-family: 'simplifica';
+  src: url('./fonts/simplifica/simplifica_typeface-webfont.woff2') format('woff2'),
+       url('./fonts/simplifica/simplifica_typeface-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.divider{
+  border-top: 4px solid var(--muted);
+}
+
+.flex {
+  display:flex;
+}
+
+.flex-stretch {
+  flex-grow: 1;
+}
+
+.flex-justify-evenly {
+  justify-content: space-evenly !important;
+}
+
+.flex-horizontal-center {
+  justify-content: center !important;
+}
+
+.flex-vertical-center{
+  align-items: center !important;
+}
+
+html {
+  font-size: 0.7rem;
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  html {font-size:0.8rem;} /*1rem = 16px*/
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  html {font-size:0.85rem;} /*1rem = 16px*/
+}

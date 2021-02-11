@@ -6,6 +6,7 @@ import { Experience } from '../profile/experience.js';
 import { Button } from 'reactstrap';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Theme } from '../profile/theme';
+import Icon from './Icon';
 
 class Timeline extends Component {
     
@@ -41,15 +42,21 @@ class Timeline extends Component {
 
     render() {
         const TimelineElements = Experience.map((exp, index) => {
-            const desc = exp.description.split('\n').map((line) => {
+            const desc = exp.description.split('\n').map((line, i) => {
                 return (
-                    <span>{line}<br /></span>
+                    <span key={line+i}>{line}<br /></span>
+                )
+            });
+            
+            const skills = exp.skills.split(',').map((skill,i) => {
+                return (
+                    <Icon key={skill+i} text={skill} />
                 )
             });
 
-
             return(
                 <VerticalTimelineElement
+                        key={index}
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: `${Theme.block}`, color: `${Theme.text}`, 
                                 borderTop: `3px solid ${Theme.muted}` }}
@@ -60,10 +67,9 @@ class Timeline extends Component {
                         icon={<img className='logo' src={exp.logo} alt='' />}
                     >
                         <div className="row">
-                            <div className="col-12 col-md-8">
+                            <div className="col-12 col-md-7">
                                 <h4 className="vertical-timeline-element-title timeline-header">{exp.title}</h4>
                                 <h6 className="vertical-timeline-element-subtitle timeline-header"><i>{exp.location}</i></h6>
-                                
                                 <div>
                                     <TransitionGroup component={null}>
                                         { this.state.experienceClicked[index] && 
@@ -76,8 +82,12 @@ class Timeline extends Component {
                                     </TransitionGroup>
                                 </div>
                             </div>
-                            <div className="d-none d-md-block col-md-4">
-                                
+                            <div className="d-none d-md-block col-md-5">
+                                <div className="container">
+                                    <div className="row">
+                                        {skills}
+                                    </div>
+                                </div>
                             </div>
                             <div className="col-12">
                                 <div className="timeline-desc text-center"
@@ -85,10 +95,10 @@ class Timeline extends Component {
                                     <Button size="block" className="ml-auto desc-button">
                                         <small>
                                             { !this.state.experienceClicked[index] && 
-                                                <i class="fa fa-angle-down"></i>
+                                                <i className="fa fa-angle-down"></i>
                                             }
                                             { this.state.experienceClicked[index] && 
-                                                <i class="fa fa-angle-up"></i>
+                                                <i className="fa fa-angle-up"></i>
                                             }
                                         </small>
                                     </Button>

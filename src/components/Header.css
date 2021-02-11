@@ -1,3 +1,4 @@
+
 .row-header{
     margin:0px auto;
     padding:0px auto;
@@ -21,16 +22,15 @@
     color: var(--text);
 }
 
-.divider{
-    border-top: 4px solid var(--muted);
-}
-
 .profile-header{
     color: var(--background);
+    font-family: simplifica;
 }
 
 .profile-desc{
     color: var(--background);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
 }
 
 .profile-desc-trans-enter {
@@ -41,3 +41,4 @@
     opacity: 1;
     transition: all 500ms ease-in;
 }
+

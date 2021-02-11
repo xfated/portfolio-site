@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
+import { Row, Container, Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { MyInfo } from '../profile/myinfo';
 import Decrypt from './Decrypt';
@@ -16,8 +16,8 @@ class Header extends Component {
         this.state = {
             isNavOpen: false,
             user: MyInfo.firstname +  ' ' + MyInfo.lastname,
-            description: MyInfo.description,
-            mounted: false
+            mounted: false,
+            description: MyInfo.description
         }
 
         this.toggleNav = this.toggleNav.bind(this);
@@ -48,15 +48,16 @@ class Header extends Component {
 
     render(){
 
-        const desc = this.state.description.split('\n').map((line) => {
+        const desc = this.state.description.split('\n').map((line, i) => {
             return (
-                <span>{line}<br /></span>
+                <span key={line+i}>{line}<br /></span>
             )
         });
 
         return(
             <React.Fragment>
-                <Jumbotron style={{ backgroundImage: `url('assets/images/wallpaper.jfif')`, backgroundSize: 'cover' }}>
+                <Jumbotron style={{ backgroundImage: `url('assets/images/wallpaper.jfif')`, backgroundSize: 'cover', 
+                                borderRadius: "0px"}}>
                     <Container className="text-center">
                         <h1 className="display-3 profile-header">
                             <Decrypt text={this.state.user} time='1500'/>
@@ -66,7 +67,8 @@ class Header extends Component {
                         </CSSTransition>
                     </Container>
                 </Jumbotron>
-                <Navbar color='light' light expand="md">
+                <div className="divider"></div> 
+                {/* <Navbar color='light' light expand="md">
                     <div className="container">
                         <NavbarBrand href="/">
                             My Journey
@@ -80,11 +82,10 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                             </Nav>
-                            
                         </Collapse>
                     </div>
                 </Navbar>
-                <div className="row divider"></div> 
+                <div className="divider"></div>  */}
             </React.Fragment>
         );
     }

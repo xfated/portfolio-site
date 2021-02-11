@@ -1,0 +1,48 @@
+
+.profile-container {
+    background: var(--background);
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
+}
+
+.profile-pic {
+    max-width: 60%;
+    border: 5px solid var(--text);
+    margin: 10px;
+    align-self: center;
+}
+
+.profile-info {
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+}
+
+.resume-download{
+    font-family: Georgia, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    background: var(--icon);
+    color: var(--text);
+    border: 2.5px solid var(--text);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width:30%;
+}
+
+.profile-social {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-social-icon {
+    margin: 3px;
+}
+
+blockquote p {
+    font-size: 1rem;
+}
+blockquote footer {
+    font-size: 0.5rem;
+}

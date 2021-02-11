@@ -4,6 +4,7 @@ export const Experience = [
         location: "Shopee",
         date: "Dec 2020 - Present",
         description: "",
+        skills: "Python,MXNet,ONNX",
         logo: "assets/images/shopee_logo.png"
     },
     {
@@ -14,6 +15,7 @@ export const Experience = [
                     "- Developed algorithm for automatic needle alignment using X-ray image. \n" +
                     "- Developed needle detection capabilities using image processing techniques and object detection neural network. \n" +
                     "- Developed data augmentation script to generate new images for training to improve model accuracy.",
+        skills: "C#,OpenCV,Object Detection,Image Processing",
         logo: "assets/images/ndr_logo.png"
     },
     {
@@ -23,6 +25,7 @@ export const Experience = [
         description: "- Built webhook service for chatbot backend architecture. \n" +
                     "- Optimized and automated testing and provisioning process for embedded devices to shorten time required by 500%. \n" +
                     "- Integration of facial recognition device into smart office using REST API and MQTT frameworks.",
+        skills: "REST,MQTT,NodeJS,Python",
         logo: "assets/images/govtech_logo.gif"
     },
     {
@@ -32,6 +35,7 @@ export const Experience = [
         description: "- Developed real-time software architecture for robots to interface with different sensors and motors. \n" +
                         "- Implemented control loops for precise movement control. \n" +
                         "- Embedded systems development in an ARM Cortex microcontroller.",
+        skills: "C,Robotics,Control Systems",
         logo: "assets/images/luminus_logo.png"
     },
     {
@@ -42,6 +46,7 @@ export const Experience = [
                     "- Liaised with external parties to organize 2 Fusion360 workshops, and industrial visit to GlobalFoundries.\n" +
                     "- Liaised with ECE Department for matters on outreach.\n" +
                     "- Organized webinar on cloud computing to introduce students to the industry.",
+        skills: "Communication,Planning,Collaboration",
         logo: "assets/images/ececlub_logo.png"
     },
     {
@@ -51,6 +56,7 @@ export const Experience = [
         description: "Teaching Assistant for the module - ENGINEERING PRINCIPLES AND PRACTICE I for computer engineering. (Module Code - CG1111) \n\n" +
                         "- Supervised and facilitated freshmen in lab studio activities. \n" +
                         "- Explained content and clarified doubts to improve students' understanding of concepts.",
+        skills: "Professionalism,Communication,Mentoring",
         logo: "assets/images/nus_logo.png"
     },
     {
@@ -60,6 +66,7 @@ export const Experience = [
         description: "- Led a group of 7 to manage sponsorship for a major Freshmen Orientation Camp. \n" +
                     "- Negotiated with external companies and secured more than $4000 worth of sponsorship. \n" +
                     "- Liaised with sponsors to complete deliverables during the camp.",
+        skills: "Planning,Organization,Outreach",
         logo: "assets/images/nus_logo.png"
     },
     {
@@ -71,6 +78,7 @@ export const Experience = [
                     "- Facilitated discussions to ensure clear understanding between vendor and users.\n" +
                     "- Tested software application to identify defects to verify feasibility of project deliverable.\n" +
                     "- Scoped and refined collaboration agreement to meet project requirements",
+        skills: "Communication,Time-Managment,Organization,Attention to Detail",
         logo: "assets/images/spgroup_logo.png"
     }
 ]
