@@ -71,9 +71,14 @@ class Timeline extends Component {
                                 <h4 className="vertical-timeline-element-title timeline-header">{exp.title}</h4>
                                 <h6 className="vertical-timeline-element-subtitle timeline-header"><i>{exp.location}</i></h6>
                                 <div>
+                                    <p>
+                                        <em>{exp.shortdesc}</em>
+                                    </p>
+                                </div>
+                                <div>
                                     <TransitionGroup component={null}>
                                         { this.state.experienceClicked[index] && 
-                                            <CSSTransition classNames="desc" timeout={200}>
+                                            <CSSTransition classNames="desc" timeout={300}>
                                                 <p>
                                                 {desc}
                                                 </p>
@@ -110,6 +115,10 @@ class Timeline extends Component {
         });
         return(
             <div className="theme-background">
+                <div className="section-header col-12 text-center">
+                    <h3 className="mb-0">Work Experience & Leadership Roles</h3>
+                    <p>My previous roles and involvement in activities</p>
+                </div>
                 <VerticalTimeline className="vertical-timeline theme-background" layout='1-column-left'>
                     {TimelineElements}
                     <VerticalTimelineElement

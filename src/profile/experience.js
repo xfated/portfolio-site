@@ -3,6 +3,7 @@ export const Experience = [
         title: "Data Science Intern (Security)",
         location: "Shopee",
         date: "Dec 2020 - Present",
+        shortdesc: "Facial Recognition work in KYC solutions.",
         description: "",
         skills: "Python,MXNet,ONNX",
         logo: "assets/images/shopee_logo.png"
@@ -11,6 +12,7 @@ export const Experience = [
         title: "Machine Learning Engineer Intern",
         location: "NDR Medical Technology Pte Ltd",
         date: "Jul 2020 - Nov 2020",
+        shortdesc:'Utilized computer vision to automate needle detection in minimally-invasive procedures.',
         description: "- Smart robotic biopsy needle path planning for lung biopsy. \n" +
                     "- Developed algorithm for automatic needle alignment using X-ray image. \n" +
                     "- Developed needle detection capabilities using image processing techniques and object detection neural network. \n" +
@@ -22,6 +24,7 @@ export const Experience = [
         title: "System Software Engineer Intern",
         location: "GovTech Singapore",
         date: "May 2020 - Jul 2020",
+        shortdesc:'Optimized test procedure for embedded devices and integrated facial recognition devices with smart office infrastructure',
         description: "- Built webhook service for chatbot backend architecture. \n" +
                     "- Optimized and automated testing and provisioning process for embedded devices to shorten time required by 500%. \n" +
                     "- Integration of facial recognition device into smart office using REST API and MQTT frameworks.",
@@ -32,6 +35,7 @@ export const Experience = [
         title: "Deputy Project Manager NUS RoboMaster ",
         location: "NUS Team LumiNUS",
         date: "Dec 2019 - Jul 2020",
+        shortdesc:'Part of the pioneering team to develop robots to compete in the RoboMaster Robotics Competition.',
         description: "- Developed real-time software architecture for robots to interface with different sensors and motors. \n" +
                         "- Implemented control loops for precise movement control. \n" +
                         "- Embedded systems development in an ARM Cortex microcontroller.",
@@ -42,6 +46,7 @@ export const Experience = [
         title: "Academics Director",
         location: "NUS ECE Club",
         date: "Aug 2019 - Jul 2020",
+        shortdesc:'Oversaw the planning and organizing of academic activities to provide opportunities for ECE undergraduates.',
         description: "- Oversaw the planning and organizing of academic activities to provide opportunities for ECE undergraduates. \n" +
                     "- Liaised with external parties to organize 2 Fusion360 workshops, and industrial visit to GlobalFoundries.\n" +
                     "- Liaised with ECE Department for matters on outreach.\n" +
@@ -53,6 +58,7 @@ export const Experience = [
         title: "Teaching Assistant",
         location: "National University of Singapore",
         date: "Aug 2019 - Dec 2019",
+        shortdesc:'Supervised and facilitated freshmen in lab studio activities.',
         description: "Teaching Assistant for the module - ENGINEERING PRINCIPLES AND PRACTICE I for computer engineering. (Module Code - CG1111) \n\n" +
                         "- Supervised and facilitated freshmen in lab studio activities. \n" +
                         "- Explained content and clarified doubts to improve students' understanding of concepts.",
@@ -63,6 +69,7 @@ export const Experience = [
         title: "Marketing Director",
         location: "NUS EnginCamp 2019",
         date: "Nov 2018 - Jul 2019",
+        shortdesc:'Led a group of 7 to manage sponsorship for a major Freshmen Orientation Camp.',
         description: "- Led a group of 7 to manage sponsorship for a major Freshmen Orientation Camp. \n" +
                     "- Negotiated with external companies and secured more than $4000 worth of sponsorship. \n" +
                     "- Liaised with sponsors to complete deliverables during the camp.",
@@ -73,6 +80,7 @@ export const Experience = [
         title: "Project Management Intern",
         location: "SP Group",
         date: "Nov 2017 - May 2018",
+        shortdesc:'Facilitated discussions and ensured smooth progression of SPEAR projects to enhance Singapore\'s energy infrastructure',
         description: "Centre of Excellence (Technology Evaluation and Piloting team)\n\n" +
                     "- Assisted in project management of SPEAR projects aimed towards enhancing Singapore's energy infrastructure.\n" +
                     "- Facilitated discussions to ensure clear understanding between vendor and users.\n" +

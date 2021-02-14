@@ -5,8 +5,8 @@ export const MyInfo =
     description: "A Penultimate Electrical Engineering.\n"+
         "Here to make a change.",
     displaypic:"assets/images/profile_pic.jpg",
-    titles: "National University of Singapore\n"+
-            "NUS Merit Scholarship",
+    titles: "Tay Kai Yang\n"+
+            "Penultimate Electrical Engineering student from NUS",
     profile_info:"I embrace continuous learning, and this website is just a small project to try something new. \n" +
                 "A Machine Learning enthusiast, I am keen on the use of technology to democratize technology."+
                 " By utilizing machine intelligence to automate all possible laborious and repititive tasks, I hope " +

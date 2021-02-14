@@ -6,6 +6,8 @@
   --muted: #932432;
   --text: #283747;
   --icon: #afe3f8;
+  --profilebackground: #ecf1cf;
+  --workbackground: #fdf9f7;
 }
 
 @font-face {
@@ -38,6 +40,11 @@
 
 .flex-vertical-center{
   align-items: center !important;
+}
+
+.section-header{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 5% 0;
 }
 
 html {

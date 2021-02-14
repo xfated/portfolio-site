@@ -28,16 +28,23 @@ const Description = (props) => {
     return(
         <div>
             <div className="profile-container flex">
+                <div className="col-12 text-center section-header">
+                    <br/>
+                    <h3 className="mb-0">About Myself</h3>
+                    <small>A small introduction</small>
+                    <br/>
+                </div>
                 <div className="col-12 col-md-6 flex flex-horizontal-center">
-                    <img className="profile-pic" src={MyInfo.displaypic} alt='profile picture'/>
+                    <div className="profile-pic-frame">
+                        <img className="profile-pic" src={MyInfo.displaypic} alt='profile picture'/>
+                    </div>
                 </div>    
                 <div className="col-12 col-md-6">
                     <div className="col-12 profile-info">
                         <div className="block text-justify">
                             <br />
-                            {titles}
+                            <h6>{titles}</h6>
                             <br />
-                            <h5>About Myself: </h5>
                             {profile_desc}
                             <br /> <br /> 
                             <blockquote className="blockquote text-center">
