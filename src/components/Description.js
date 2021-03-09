@@ -30,7 +30,7 @@ const Description = (props) => {
             <div className="profile-container flex">
                 <div className="col-12 text-center section-header">
                     <br/>
-                    <h3 className="mb-0">About Myself</h3>
+                    <h1 className="mb-0">About Myself</h1>
                     <small>A small introduction</small>
                     <br/>
                 </div>

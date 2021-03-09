@@ -116,7 +116,7 @@ class Timeline extends Component {
         return(
             <div className="theme-background">
                 <div className="section-header col-12 text-center">
-                    <h3 className="mb-0">Work Experience & Leadership Roles</h3>
+                    <h1 className="mb-0">Work Experience & Leadership Roles</h1>
                     <p>My previous roles and involvement in activities</p>
                 </div>
                 <VerticalTimeline className="vertical-timeline theme-background" layout='1-column-left'>

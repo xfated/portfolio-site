@@ -2,7 +2,7 @@ export const MyInfo =
 {
     firstname: "Kai Yang",
     lastname: "Tay",
-    description: "A Penultimate Electrical Engineering.\n"+
+    description: "A Penultimate Electrical Engineering Undergraduate.\n"+
         "Here to make a change.",
     displaypic:"assets/images/profile_pic.jpg",
     titles: "Tay Kai Yang\n"+

@@ -1,0 +1,48 @@
+.test {
+    background: green;
+}
+
+.project-section{
+    background: #d8eff0;
+    padding-bottom: 70px;
+}
+.project-container {
+    width: 80%;
+}
+
+.project-card-img-frame{
+    width: 80%;
+}
+
+.project-card-img {
+    height: 40%;
+    overflow: hidden;
+    /* padding: 0px 20px; */
+    margin-top: 5px;
+}
+
+.project-card{
+    height: 40vh;
+    border-radius: 20px;
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .project-card{
+        height: 50vw;
+    }
+    .project-card-img {
+        margin-top: 0px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .project-card{
+        height: 30vw;
+    }
+    .project-card-img {
+        margin-top: 10px;
+    }
+}
+  

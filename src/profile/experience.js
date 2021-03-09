@@ -6,7 +6,7 @@ export const Experience = [
         shortdesc: "Facial Recognition work in KYC solutions.",
         description: "",
         skills: "Python,MXNet,ONNX",
-        logo: "assets/images/shopee_logo.png"
+        logo: "assets/images/experiences/shopee_logo.png"
     },
     {
         title: "Machine Learning Engineer Intern",
@@ -16,9 +16,9 @@ export const Experience = [
         description: "- Smart robotic biopsy needle path planning for lung biopsy. \n" +
                     "- Developed algorithm for automatic needle alignment using X-ray image. \n" +
                     "- Developed needle detection capabilities using image processing techniques and object detection neural network. \n" +
-                    "- Developed data augmentation script to generate new images for training to improve model accuracy.",
+                    "- Developed data augmentation script to generate new images/experiences for training to improve model accuracy.",
         skills: "C#,OpenCV,Object Detection,Image Processing",
-        logo: "assets/images/ndr_logo.png"
+        logo: "assets/images/experiences/ndr_logo.png"
     },
     {
         title: "System Software Engineer Intern",
@@ -29,7 +29,7 @@ export const Experience = [
                     "- Optimized and automated testing and provisioning process for embedded devices to shorten time required by 500%. \n" +
                     "- Integration of facial recognition device into smart office using REST API and MQTT frameworks.",
         skills: "REST,MQTT,NodeJS,Python",
-        logo: "assets/images/govtech_logo.gif"
+        logo: "assets/images/experiences/govtech_logo.gif"
     },
     {
         title: "Deputy Project Manager NUS RoboMaster ",
@@ -40,7 +40,7 @@ export const Experience = [
                         "- Implemented control loops for precise movement control. \n" +
                         "- Embedded systems development in an ARM Cortex microcontroller.",
         skills: "C,Robotics,Control Systems",
-        logo: "assets/images/luminus_logo.png"
+        logo: "assets/images/experiences/luminus_logo.png"
     },
     {
         title: "Academics Director",
@@ -52,7 +52,7 @@ export const Experience = [
                     "- Liaised with ECE Department for matters on outreach.\n" +
                     "- Organized webinar on cloud computing to introduce students to the industry.",
         skills: "Communication,Planning,Collaboration",
-        logo: "assets/images/ececlub_logo.png"
+        logo: "assets/images/experiences/ececlub_logo.png"
     },
     {
         title: "Teaching Assistant",
@@ -63,7 +63,7 @@ export const Experience = [
                         "- Supervised and facilitated freshmen in lab studio activities. \n" +
                         "- Explained content and clarified doubts to improve students' understanding of concepts.",
         skills: "Professionalism,Communication,Mentoring",
-        logo: "assets/images/nus_logo.png"
+        logo: "assets/images/experiences/nus_logo.png"
     },
     {
         title: "Marketing Director",
@@ -74,7 +74,7 @@ export const Experience = [
                     "- Negotiated with external companies and secured more than $4000 worth of sponsorship. \n" +
                     "- Liaised with sponsors to complete deliverables during the camp.",
         skills: "Planning,Organization,Outreach",
-        logo: "assets/images/nus_logo.png"
+        logo: "assets/images/experiences/nus_logo.png"
     },
     {
         title: "Project Management Intern",
@@ -87,6 +87,6 @@ export const Experience = [
                     "- Tested software application to identify defects to verify feasibility of project deliverable.\n" +
                     "- Scoped and refined collaboration agreement to meet project requirements",
         skills: "Communication,Time-Managment,Organization,Attention to Detail",
-        logo: "assets/images/spgroup_logo.png"
+        logo: "assets/images/experiences/spgroup_logo.png"
     }
 ]

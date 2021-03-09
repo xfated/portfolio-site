@@ -47,6 +47,19 @@
   padding: 5% 0;
 }
 
+.modal-w80{
+  min-width: 80% !important;
+}
+
+.modal-w90{
+  min-width: 90% !important;
+}
+
+.modal-w100{
+  min-width: 100% !important;
+}
+
+
 html {
   font-size: 0.7rem;
 }
