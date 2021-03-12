@@ -25,10 +25,9 @@ const Projects = (props) => {
         return (
             <a style={{cursor:'pointer'}} onClick={toggleModal}>
                 <Card className="project-card" key={key}>
-                    <div className="project-card-img flex flex-horizontal-center flex-vertical-center border-bottom" >
-                        <div className="project-card-img-frame p-2">
-                            <img style={{ width:"100%", maxHeight:"100%"}} src={project.image} alt={project.title} />
-                        </div>
+                    <div className="project-card-img mt-0 mb-0">
+                            {/* <img style={{ width:"100%", maxHeight:"100%"}} src={project.image} alt={project.title} /> */}
+                        <CardImg style={{height:"100%", objectFit:"cover"}} src={project.image} alt={project.title}></CardImg>
                     </div>
                     <CardBody>
                         <CardTitle tag="h5">{project.title}</CardTitle>
@@ -44,18 +43,46 @@ const Projects = (props) => {
     const ProjectCards = (category) => { 
         return ExpProjects.map((project, idx) => {
             const toggleModal = toggleProjectModal(idx);
-            const project_desc = project.details.split('\n').map((line,i) => {
+            const project_desc = project.details.map((line,i) => {
+                /* Title */
+                if (line.includes("<h3>")){
+                    return <h2 key={line+i}>{line.replace("<h3>","")}</h2>
+                }
+                if (line.includes("<h6>")){
+                    return <h6 key={line+i}>{line.replace("<h6>","")}</h6>
+                }
+                /* Bold */
+                if (line.includes("**")){
+                    const sentence = line.split("**").map((part,i) => {
+                        return (i%2!=0) ? <strong>{part}</strong> : <span>{part}</span>;
+                    });
+                    return (
+                        <span key={line+i}>{sentence}<br/></span>
+                    )
+                }
+                /* Emphasis on first word */
+                if (line.includes("<boldfirst>")){
+                    line = line.replace("<boldfirst>","");
+                    let spaceIndex = line.indexOf(' ');
+                    return (
+                        <span>
+                            <strong>{line.substring(0,spaceIndex)}</strong>
+                            <span>{line.substring(spaceIndex, line.length)}</span>
+                            <br />
+                        </span>
+                    );
+                }
                 return (
-                    <span key={line+i}>{line}<br /></span>
-                )
+                        <span key={line+i}>{line}<br /></span>
+                    )
             });
             
             if (project.category===category){
                 return (
-                    <div className="col-6 col-md-4">
+                    <div className="col-6 col-md-4 col-lg-3 p-4">
                         <div>
                             <RenderProject project={project} toggleModal={toggleModal} key={project.title} />
-                            <Modal isOpen={modalList[idx]} toggle={toggleModal}>
+                            <Modal isOpen={modalList[idx]} toggle={toggleModal} className="modal-w60">
                                 <ModalHeader toggle={toggleModal} charCode="x">
                                     {project.title}
                                 </ModalHeader>

@@ -47,6 +47,10 @@
   padding: 5% 0;
 }
 
+.modal-w60{
+  min-width: 60% !important;
+}
+
 .modal-w80{
   min-width: 80% !important;
 }

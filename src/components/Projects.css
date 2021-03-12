@@ -10,26 +10,24 @@
     width: 80%;
 }
 
-.project-card-img-frame{
-    width: 80%;
-}
 
 .project-card-img {
     height: 40%;
-    overflow: hidden;
-    /* padding: 0px 20px; */
-    margin-top: 5px;
+    /* overflow: hidden; */
+    /* object-fit: cover; */
 }
 
 .project-card{
     height: 40vh;
-    border-radius: 20px;
+    border-radius: 35px;
+    overflow: hidden;
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
     .project-card{
-        height: 50vw;
+        height: 35vw;
+        font-size:small;
     }
     .project-card-img {
         margin-top: 0px;
@@ -39,7 +37,7 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     .project-card{
-        height: 30vw;
+        height: 22vw;
     }
     .project-card-img {
         margin-top: 10px;
