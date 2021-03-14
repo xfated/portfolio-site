@@ -10,6 +10,13 @@
     width: 80%;
 }
 
+.project-modal-title{
+    font-family:simplifica;
+}
+
+.project-modal-text{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 
 .project-card-img {
     height: 40%;

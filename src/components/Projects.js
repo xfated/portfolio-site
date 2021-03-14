@@ -45,8 +45,8 @@ const Projects = (props) => {
             const toggleModal = toggleProjectModal(idx);
             const project_desc = project.details.map((line,i) => {
                 /* Title */
-                if (line.includes("<h3>")){
-                    return <h2 key={line+i}>{line.replace("<h3>","")}</h2>
+                if (line.includes("<h4>")){
+                    return <h4 className="project-modal-title border-bottom" key={line+i}><strong>{line.replace("<h4>","")}</strong></h4>
                 }
                 if (line.includes("<h6>")){
                     return <h6 key={line+i}>{line.replace("<h6>","")}</h6>
@@ -57,7 +57,7 @@ const Projects = (props) => {
                         return (i%2!=0) ? <strong>{part}</strong> : <span>{part}</span>;
                     });
                     return (
-                        <span key={line+i}>{sentence}<br/></span>
+                        <span className="project-modal-text" key={line+i}>{sentence}<br/></span>
                     )
                 }
                 /* Emphasis on first word */
@@ -65,7 +65,7 @@ const Projects = (props) => {
                     line = line.replace("<boldfirst>","");
                     let spaceIndex = line.indexOf(' ');
                     return (
-                        <span>
+                        <span className="project-modal-text">
                             <strong>{line.substring(0,spaceIndex)}</strong>
                             <span>{line.substring(spaceIndex, line.length)}</span>
                             <br />
@@ -73,7 +73,7 @@ const Projects = (props) => {
                     );
                 }
                 return (
-                        <span key={line+i}>{line}<br /></span>
+                        <span className="project-modal-text" key={line+i}>{line}<br /></span>
                     )
             });
             
@@ -121,6 +121,12 @@ const Projects = (props) => {
                             <h3 className="p-2 border-bottom border-dark mb-4">Hackathons</h3>
                         </div>
                         {ProjectCards('hackathon')}
+                    </div>
+                    <div className="row mb-5">
+                        <div className="col-12">
+                            <h3 className="p-2 border-bottom border-dark mb-4">Side Projects</h3>
+                        </div>
+                        {ProjectCards('sideproject')}
                     </div>
                 </div>
             </div>
