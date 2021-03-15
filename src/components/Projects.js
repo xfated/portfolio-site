@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Card, CardImg, CardBody, CardImgOverlay, CardTitle, CardText,
-        Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
+        Modal, ModalHeader, ModalBody, ModalFooter, Button} from 'reactstrap';
 import { ExpProjects } from '../profile/projects.js';
 import './Projects.css';
 
@@ -45,8 +45,8 @@ const Projects = (props) => {
             const toggleModal = toggleProjectModal(idx);
             const project_desc = project.details.map((line,i) => {
                 /* Title */
-                if (line.includes("<h4>")){
-                    return <h4 className="project-modal-title border-bottom" key={line+i}><strong>{line.replace("<h4>","")}</strong></h4>
+                if (line.includes("<h3>")){
+                    return <h3 className="project-modal-title border-bottom" key={line+i}><strong>{line.replace("<h3>","")}</strong></h3>
                 }
                 if (line.includes("<h6>")){
                     return <h6 key={line+i}>{line.replace("<h6>","")}</h6>
@@ -82,13 +82,24 @@ const Projects = (props) => {
                     <div className="col-6 col-md-4 col-lg-3 p-4">
                         <div>
                             <RenderProject project={project} toggleModal={toggleModal} key={project.title} />
-                            <Modal isOpen={modalList[idx]} toggle={toggleModal} className="modal-w60">
-                                <ModalHeader toggle={toggleModal} charCode="x">
+                            <Modal isOpen={modalList[idx]} toggle={toggleModal} className="modal-w80">
+                                <ModalHeader toggle={toggleModal} charCode="x" className="flex">
                                     {project.title}
                                 </ModalHeader>
                                 <ModalBody>
-                                    {project_desc}
+                                    <div className="col-12 mb-3 flex flex-vertical-center">
+                                        <span className="project-modal-title" style={{fontSize:"1.75rem"}}><strong>Link:&emsp;</strong></span> 
+                                        <Button outline className="project-modal-text" color="secondary" href={project.link}>{project.linktitle}</Button>
+                                    </div>
+                                    <div className="col-12">
+                                        {project_desc}
+                                    </div>
                                 </ModalBody>
+                                <ModalFooter>
+                                    <div className="ml-auto">
+                                        <cite>Completed in</cite> <strong>2020</strong>
+                                    </div>
+                                </ModalFooter>
                             </Modal>
                         </div>  
                     </div>

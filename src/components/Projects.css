@@ -18,6 +18,7 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+
 .project-card-img {
     height: 40%;
     /* overflow: hidden; */
@@ -33,7 +34,7 @@
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
     .project-card{
-        height: 35vw;
+        height: 36vw;
         font-size:small;
     }
     .project-card-img {
