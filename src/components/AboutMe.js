@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Description from './Description';
 import Timeline from './Timeline';
 import Projects from './Projects';

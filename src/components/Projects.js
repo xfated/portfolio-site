@@ -26,8 +26,7 @@ const Projects = (props) => {
             <a style={{cursor:'pointer'}} onClick={toggleModal}>
                 <Card className="project-card" key={key}>
                     <div className="project-card-img mt-0 mb-0">
-                            {/* <img style={{ width:"100%", maxHeight:"100%"}} src={project.image} alt={project.title} /> */}
-                        <CardImg style={{height:"100%", objectFit:"cover"}} src={project.image} alt={project.title}></CardImg>
+                        <CardImg style={{height:"100%", objectFit:"cover"}} src={`${process.env.PUBLIC_URL}/${project.image}`} alt={project.title}></CardImg>
                     </div>
                     <CardBody>
                         <CardTitle tag="h5">{project.title}</CardTitle>

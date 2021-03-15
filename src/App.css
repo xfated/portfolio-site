@@ -18,17 +18,6 @@
   font-style: normal;
 }
 
-a:link{
-  color:var(--text);
-}
-a:visited{
-  color:var(--text);
-}
-a:hover{
-  cursor:pointer;
-  color:var(--muted);
-}
-
 .divider{
   border-top: 4px solid var(--muted);
 }

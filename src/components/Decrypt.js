@@ -36,14 +36,14 @@ const Decrypt = (props) => {
         }, time);
     }
 
-    const animateDecrypt = () => {
-
-        for (var i = 0; i < word.length; i++){
-            updateWord(props.text[count], time_per_letter)
-        }
-    }
 
     useEffect(() => {
+        const animateDecrypt = () => {
+            for (var i = 0; i < word.length; i++){
+                updateWord(props.text[count], time_per_letter)
+            }
+        }
+        
         if (count < props.text.length){
             animateDecrypt();
         }

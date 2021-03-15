@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Row, Container, Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
+import { Container, Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { MyInfo } from '../profile/myinfo';
 import Decrypt from './Decrypt';
-import { Theme } from '../profile/theme';
 import { CSSTransition } from "react-transition-group";
 import './Header.css';
 
@@ -56,7 +55,7 @@ class Header extends Component {
 
         return(
             <React.Fragment>
-                <Jumbotron style={{ backgroundImage: `url('assets/images/wallpaper.jfif')`, backgroundSize: 'cover', 
+                <Jumbotron style={{ backgroundImage: `url('${process.env.PUBLIC_URL}/assets/images/wallpaper.jfif')`, backgroundSize: 'cover', 
                                 borderRadius: "0px"}}>
                     <Container className="text-center">
                         <h1 className="display-3 profile-header">

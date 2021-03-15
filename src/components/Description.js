@@ -36,7 +36,7 @@ const Description = (props) => {
                 </div>
                 <div className="col-12 col-md-6 flex flex-horizontal-center">
                     <div className="profile-pic-frame">
-                        <img className="profile-pic" src={MyInfo.displaypic} alt='profile picture'/>
+                        <img className="profile-pic" src={`${process.env.PUBLIC_URL}/${MyInfo.displaypic}`} alt='profile picture'/>
                     </div>
                 </div>    
                 <div className="col-12 col-md-6">
