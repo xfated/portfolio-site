@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0e08423.chunk.css",
+    "main.css": "/static/css/main.7d0d1eee.chunk.css",
     "main.js": "/static/js/main.f857952c.chunk.js",
     "main.js.map": "/static/js/main.f857952c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.20e5fc4b.js",
@@ -12,7 +12,7 @@
     "static/js/3.66a8e2e8.chunk.js.map": "/static/js/3.66a8e2e8.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.2f74a2a0.chunk.css.map": "/static/css/2.2f74a2a0.chunk.css.map",
-    "static/css/main.b0e08423.chunk.css.map": "/static/css/main.b0e08423.chunk.css.map",
+    "static/css/main.7d0d1eee.chunk.css.map": "/static/css/main.7d0d1eee.chunk.css.map",
     "static/js/2.57f7788c.chunk.js.LICENSE.txt": "/static/js/2.57f7788c.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/App.css": "/static/media/simplifica_typeface-webfont.ef0f8971.woff2"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.20e5fc4b.js",
     "static/css/2.2f74a2a0.chunk.css",
     "static/js/2.57f7788c.chunk.js",
-    "static/css/main.b0e08423.chunk.css",
+    "static/css/main.7d0d1eee.chunk.css",
     "static/js/main.f857952c.chunk.js"
   ]
 }
