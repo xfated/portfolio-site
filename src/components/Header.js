@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { Container, Jumbotron } from 'reactstrap';
 import { MyInfo } from '../profile/myinfo';
 import Decrypt from './Decrypt';
 import { CSSTransition } from "react-transition-group";

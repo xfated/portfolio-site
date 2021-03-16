@@ -23,7 +23,7 @@ const Projects = (props) => {
 
     function RenderProject( {project, toggleModal, key} ){
         return (
-            <a style={{cursor:'pointer'}} onClick={toggleModal}>
+            <btn style={{cursor:'pointer'}}  onClick={toggleModal}>
                 <Card className="project-card" key={key}>
                     <div className="project-card-img mt-0 mb-0">
                         <CardImg style={{height:"100%", objectFit:"cover"}} src={`${process.env.PUBLIC_URL}/${project.image}`} alt={project.title}></CardImg>
@@ -38,7 +38,7 @@ const Projects = (props) => {
                         </div>
                     </CardBody>
                 </Card>
-            </a>
+            </btn>
         );
     };
 
@@ -56,7 +56,7 @@ const Projects = (props) => {
                 /* Bold */
                 if (line.includes("**")){
                     const sentence = line.split("**").map((part,i) => {
-                        return (i%2!=0) ? <strong>{part}</strong> : <span>{part}</span>;
+                        return (i%2!==0) ? <strong>{part}</strong> : <span>{part}</span>;
                     });
                     return (
                         <span className="project-modal-text" key={line+i}>{sentence}<br/></span>
@@ -89,12 +89,14 @@ const Projects = (props) => {
                                     {project.title}
                                 </ModalHeader>
                                 <ModalBody>
-                                    <div className="col-12 flex flex-horizontal-center project-modal-img">
-                                        <img style={{height:"300px", maxWidth:"80%"}} src={`${process.env.PUBLIC_URL}/${project.image}`} alt={project.title}></img>
+                                    <div className="col-12 flex flex-horizontal-center mb-1">
+                                        <img style={{maxHeight:"300px", maxWidth:"80%"}} src={`${process.env.PUBLIC_URL}/${project.image}`} alt={project.title}></img>
                                     </div>
-                                    <div className="section-header text-center">
-                                        <h5>{project.subtitle}</h5>
-                                    </div>
+                                    {   project.subtitle.length > 0 &&
+                                        <div className="section-header text-center">
+                                            <h5>{project.subtitle}</h5>
+                                        </div>
+                                    }
                                     {   project.link.length > 0 &&
                                         <div className="col-12 mb-3 flex flex-vertical-center">
                                             <span className="project-modal-title" style={{fontSize:"1.75rem"}}><strong>Link:&emsp;</strong></span> 
