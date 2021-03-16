@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Card, CardImg, CardBody, CardImgOverlay, CardTitle, CardText,
+import { Card, CardImg, CardBody, CardTitle, CardText,
         Modal, ModalHeader, ModalBody, ModalFooter, Button} from 'reactstrap';
 import { ExpProjects } from '../profile/projects.js';
 import './Projects.css';
@@ -33,6 +33,9 @@ const Projects = (props) => {
                         <CardText>
                             {project.briefdesc}
                         </CardText>
+                        <div style={{position:"absolute", bottom:"15px", right:"20px"}}>
+                            <cite>{project.year}</cite>
+                        </div>
                     </CardBody>
                 </Card>
             </a>
@@ -78,7 +81,7 @@ const Projects = (props) => {
             
             if (project.category===category){
                 return (
-                    <div className="col-6 col-md-4 col-lg-3 p-4">
+                    <div className="col-6 col-md-4 col-lg-3 p-2">
                         <div>
                             <RenderProject project={project} toggleModal={toggleModal} key={project.title} />
                             <Modal isOpen={modalList[idx]} toggle={toggleModal} className="modal-w80">
@@ -86,10 +89,18 @@ const Projects = (props) => {
                                     {project.title}
                                 </ModalHeader>
                                 <ModalBody>
-                                    <div className="col-12 mb-3 flex flex-vertical-center">
-                                        <span className="project-modal-title" style={{fontSize:"1.75rem"}}><strong>Link:&emsp;</strong></span> 
-                                        <Button outline className="project-modal-text" color="secondary" href={project.link}>{project.linktitle}</Button>
+                                    <div className="col-12 flex flex-horizontal-center project-modal-img">
+                                        <img style={{height:"300px", maxWidth:"80%"}} src={`${process.env.PUBLIC_URL}/${project.image}`} alt={project.title}></img>
                                     </div>
+                                    <div className="section-header text-center">
+                                        <h5>{project.subtitle}</h5>
+                                    </div>
+                                    {   project.link.length > 0 &&
+                                        <div className="col-12 mb-3 flex flex-vertical-center">
+                                            <span className="project-modal-title" style={{fontSize:"1.75rem"}}><strong>Link:&emsp;</strong></span> 
+                                            <Button outline className="project-modal-text" color="secondary" href={project.link}>{project.linktitle}</Button>
+                                        </div>
+                                    }
                                     <div className="col-12">
                                         {project_desc}
                                     </div>

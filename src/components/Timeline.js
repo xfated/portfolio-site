@@ -64,7 +64,7 @@ class Timeline extends Component {
                         date={exp.date}
                         iconStyle={{background: `${Theme.background}`}}
                         iconOnClick={() => this.toggleExperienceState(index)}
-                        icon={<img className='logo' src={exp.logo} alt='' />}
+                        icon={<img className='logo' src={`${process.env.PUBLIC_URL}/${exp.logo}`} alt='' />}
                     >
                         <div className="row">
                             <div className="col-12 col-md-7">
@@ -114,7 +114,7 @@ class Timeline extends Component {
             )
         });
         return(
-            <div className="theme-background">
+            <div className="theme-background" style={{overflow:"hidden"}}>
                 <div className="section-header col-12 text-center">
                     <h1 className="mb-0">Work Experience & Leadership Roles</h1>
                     <p>My previous roles and involvement in activities</p>

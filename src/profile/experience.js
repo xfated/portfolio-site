@@ -5,7 +5,7 @@ export const Experience = [
         date: "Dec 2020 - Present",
         shortdesc: "Facial Recognition work in KYC solutions.",
         description: "",
-        skills: "Python,MXNet,ONNX",
+        skills: "Python,MXNet,ONNX, Apache TVM",
         logo: "assets/images/experiences/shopee_logo.png"
     },
     {

@@ -2,6 +2,7 @@
     height: 200px;
     flex-wrap: wrap;
     background: var(--text);
+    overflow: hidden;
 }
 
 .footer-content {

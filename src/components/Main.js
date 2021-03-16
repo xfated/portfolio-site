@@ -6,14 +6,14 @@ import Footer from './Footer';
 
 function Main() {
     return (
-        <div>
+        <>
             <Header />
             <Switch>
                 <Route path="/" component={AboutMe} />
                 <Redirect to="/" />
             </Switch>
             <Footer />
-        </div>
+        </>
     )
 }
 

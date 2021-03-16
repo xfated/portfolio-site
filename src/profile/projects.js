@@ -20,8 +20,8 @@ export const ExpProjects = [
         year: "2020"
     },
     {
-        title: "LumiNus",
-        subtitle: "NUS Robomaster - Team LumiNUS",
+        title: "NUS RoboMasters",
+        subtitle: "Team LumiNUS",
         linktitle: "Midterm Video",
         category: "competition",
         image: "assets/images/projects/robomaster.JPG",
@@ -41,13 +41,72 @@ export const ExpProjects = [
         year: "2020"
     },
     {
+        title: "iNTUition v7.0",
+        subtitle:"TattleTale",
+        linktitle: "Try it out!",
+        category: "hackathon",
+        image:"assets/images/projects/tattletale.jpg",
+        link:"https://ta-ttletale.herokuapp.com",
+        briefdesc:"I built the web app.",
+        details:[
+            "<h3>Inspiration",
+            "<boldfirst>To increase the accessibility and exposure to reading in developing countries.",
+            "<boldfirst>Reading books and stories have tremendous impacts on cognitive and linguistics development which can be difficult to access for the illiterate.",
+            "<boldfirst>GPT language model for story generation through a simple no-frills web application.",
+            "",
+            "<h3>What it does",
+            "TattleTale, is a web application which aims to improve reading accessibility to the illiterate. Unlimited and fully-accessible stories for children generated using GPT language model.",
+            "",
+            "<h3>How we built it",
+            "<boldfirst>Web application Simple web application is being designed and created using React.",
+            "<boldfirst>Cloud services (AWS in our Proof-of-concept) are used to handle requests for input and output to and from the GPT model.",
+            "<boldfirst>GPT model training To use GPT-2 model, we first scraped for training data on children bedtime stories using Beautiful Soup through https://www.studentuk.com/category/bedtime-stories/ and https://www.tonightsbedtimestory.com/stories/. Fine-tuning was done on pre-trained model obtain children-friendly stories.",
+            "",
+            "<h3>Other links",
+            "<boldfirst>WebApp: https://github.com/xfated/intuitive/tree/main/public",
+            "<boldfirst>GPT-Training: https://github.com/linminhtoo/that_one",
+            "<boldfirst>Devpost: https://devpost.com/software/tattletale"
+        ],
+        year:"2021"
+    },
+    {
+        title: "Hack&Roll 2021",
+        subtitle:"H2O'clock",
+        linktitle: "Github Repo",
+        category: "hackathon",
+        image:"assets/images/projects/h2oclock.JPG",
+        link:"https://github.com/prav17/HacknRoll",
+        briefdesc:"Flutter was difficult.",
+        details:[
+            "<h3>Inspiration",
+            "We wanted a solution that helps you wake up on the right side of the bed.",
+            "H2O'clock is an alarm clock that doesn't stop ringing until you drink that 650ml of water you need.",
+            "",
+            "<h3>What is it?",
+            "An alarm clock that uses a weight sensor to track the amount of water drank by users.",
+            "Links to a mobile app for additional functionality, like custom alarms, fetching daily tasks.",
+            "<boldfirst>First it wakes you up.",
+            "<boldfirst>Next, while you are drinking the water, it reads you your itenary for the day.",
+            "<boldfirst>Helps you wake up right, with a plan in mind, ready to go!",
+            "",
+            "<h3>What I did",
+            "<boldfirst>Learnt Flutter.",
+            "<boldfirst>Integrated Google Calendar API to fetch user's daily tasks.",
+            "<boldfirst>Integrated Google Text-to-Speech API to convert tasks to an audio file, which is then played through a speaker.",
+            "",
+            "<h3>Other links",
+            "<boldfirst>Devpost: https://devpost.com/software/h2o-clock"
+        ],
+        year:"2021"
+    },
+    {
         title: "Call For Code 2020",
         subtitle: "SCDF X IBM Lifesavers' Innovation Challenge",
         linktitle: "Github Repo",
         category: "hackathon",
         image: "assets/images/projects/scdfxibm.jpeg",
         link: "https://github.com/xfated/BBM-ekaWay_SCDFXIBM",
-        briefdesc: "For this hackathon, my team and I have tackled the issue of how the traffic jams that plague " +
+        briefdesc: "We tackled the issue of how the traffic jams that plague " +
             "our roads can affect the efficiency of our emergency responders.",
         details: [
             "<h3>Problem Statement:",
@@ -70,12 +129,12 @@ export const ExpProjects = [
         category: "hackathon",
         image: "assets/images/projects/dunduino.jpg",
         link: "",
-        briefdesc: "Our project, FLOMK, is an interactive pet that simulates the experience of raising a pet." + 
-                "Prototyped with Arduino, it's as realistic as it can get!",
+        briefdesc: "Prototyped with Arduino, it's as realistic as it can get!",
         details: [
             "<h3> What is it?",
             "Organized by the IEEE NUS Student Branch, the Hackathon aims to provide a platform for cross-disciplinary appreciation and" +
             " project implementation (hardware and software) with an end goal of exposing the varsity landscape to hack culture.",
+            "Our project, FLOMK, is an interactive pet that simulates the experience of raising a pet.",
             "",
             "<h3>Problem statement:",
             "Using design concepts, create a software or hardware product that can benefit and contribute to environmental change in your community.",
@@ -127,7 +186,7 @@ export const ExpProjects = [
         briefdesc:"A mini project to experiment with pix2pix generation using CNNs",
         details:[
             "<h3>Inspiration",
-            "I just wanted to do a project using CNNs",
+            "I just wanted to do a project using CNNs.",
             "",
             "<h3>Data",
             "<boldfirst>Used fatkun to batch download images from the internet.",
@@ -192,7 +251,14 @@ export const ExpProjects = [
         link:"http://t.me/paper_toilet_bot",
         briefdesc:"A short project done to explore the use of Google's Dialogflow for chatbots.",
         details:[
-            
+            "<h3>What is it?",
+            "A QnA bot, created with NodeJS and deployed on Heroku.",
+            "",
+            "<h3>What I did",
+            "<boldfirst>Learnt NodeJS",
+            "<boldfirst>Prepared a bank of common QnA based on information found online.",
+            "<boldfirst>Used Google's Dialogflow API, a Natural Language Understanding platform to parse user questions.",
+            "<boldfirst>Integrated with Telegram's API to present the solution as a Telegram bot."
         ],
         year:"2020"
     },
