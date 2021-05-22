@@ -8,7 +8,7 @@ const Description = (props) => {
 
     const saveFile = () => {
         saveAs(
-            MyInfo.resume, `${(MyInfo.firstname).replaceAll(/\s/g,'')}${(MyInfo.lastname).replaceAll(/\s/g,'')}_Resume.pdf`
+            `${process.env.PUBLIC_URL}/${MyInfo.resume}`, `${(MyInfo.firstname).replaceAll(/\s/g,'')}${(MyInfo.lastname).replaceAll(/\s/g,'')}_Resume.pdf`
         );
     }
 

@@ -76,7 +76,7 @@ export const ExpProjects = [
         category: "hackathon",
         image:"assets/images/projects/h2oclock.JPG",
         link:"https://github.com/prav17/HacknRoll",
-        briefdesc:"Flutter was difficult.",
+        briefdesc:"Flutter was frustrating.",
         details:[
             "<h3>Inspiration",
             "We wanted a solution that helps you wake up on the right side of the bed.",
@@ -235,7 +235,7 @@ export const ExpProjects = [
         details:[
             "<h3>What is it about?",
             "This project explores the use of K-means clustering to identify the most common colors " + 
-            "in an image, and repalces all pixels with the closest color.",
+            "in an image, and replaces all pixels with the closest color.",
             "",
             "<h3>Motivation",
             "<boldfirst>i find the minimalist versions of pictures to have a unique and pleasing aesthetic."
