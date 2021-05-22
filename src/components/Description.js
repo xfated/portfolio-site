@@ -69,6 +69,9 @@ const Description = (props) => {
                     </div>
                 </div>               
             </div>
+            <div className="col-12 text-right update-time">
+                <span><i>Last Updated On: {MyInfo.update_time}</i></span>
+            </div>
         </div>
     );
 }

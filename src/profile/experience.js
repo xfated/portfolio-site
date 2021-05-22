@@ -3,9 +3,12 @@ export const Experience = [
         title: "Data Science Intern (Security)",
         location: "Shopee",
         date: "Dec 2020 - Present",
-        shortdesc: "Facial Recognition work in KYC solutions.",
-        description: "",
-        skills: "Python,MXNet,ONNX, Apache TVM",
+        shortdesc: "Involved in improving Know-Your-Customer (KYC) solutions.",
+        description: "- Implemented and benchmarked deep learning models from research papers.\n" +
+                    "- Assessed inference frameworks' performance: TensorRT, Apache TVM, ONNX Runtime. \n" +
+                    "- Model compression with Tensorflow Lite post-training quantization and knowledge distillation\n" + 
+                    "- Worked on Facial Recognition, Face Detection and Landmark Detection.",
+        skills: "Python, Deep Learning, Model Compression, Computer Vision",
         logo: "assets/images/experiences/shopee_logo.png"
     },
     {

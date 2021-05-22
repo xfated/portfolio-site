@@ -7,12 +7,14 @@ const Footer = (props) => {
         <div className="footer">
            <div className="divider"></div>
            <div className="footer-content flex flex-vertical-center flex-horizontal-center"> 
-                <blockquote className="blockquote text-center">
-                    <p className="quote mb-0">
-                        <i className="quote-icon fa fa-broom fa-pull-left"></i>
-                        {MyInfo.footer_quote}
-                    </p>
-                </blockquote>
+                <div>
+                    <blockquote className="blockquote text-center flex">
+                        <p className="quote mb-0">
+                            <i className="quote-icon fa fa-broom fa-pull-left"></i>
+                            {MyInfo.footer_quote}
+                        </p>
+                    </blockquote>
+                </div>
             </div>
         </div>
     );

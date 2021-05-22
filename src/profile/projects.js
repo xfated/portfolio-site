@@ -263,6 +263,46 @@ export const ExpProjects = [
         year:"2020"
     },
     {
+        title: "Texture Synthesis",
+        subtitle:"EE4212-Computer Vision Assignment",
+        linktitle: "Github Repo",
+        category: "sideproject",
+        image:"assets/images/projects/texture_synth.JPG",
+        link:"https://github.com/xfated/texture-synthesis",
+        briefdesc:"Texture Synthesis with Non-parametric Sampling",
+        details:[
+            "<h3>What is it?",
+            "An assigment as part of NUS EE4212 Computer Vision module",
+            "Matlab implementation based on the Efros & Leung algorithm proposed in https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf, synthesize textures by sampling from an initial texture.",
+            "",
+            "<h3>What I did",
+            "<boldfirst>Implemented algorithm from scratch.",
+            "<boldfirst>Implemented priority queue to optimize selection of next pixel.",
+            "<boldfirst>Incorporated vectorization to accelerate synthesis."
+        ],
+        year:"2021"
+    },
+    {
+        title: "Image Segmentation",
+        subtitle:"EE4212-Computer Vision Assignment",
+        linktitle: "Github Repo",
+        category: "sideproject",
+        image:"assets/images/projects/img_seg.jpg",
+        link:"https://github.com/xfated/graphcut_mrf",
+        briefdesc:"Use of K-Means algorithm and multilabel graph cut for image segmentation.",
+        details:[
+            "<h3>What is it?",
+            "An assigment as part of NUS EE4212 Computer Vision module.",
+            "Matlab implementation to utilize an external multilabel graph cut implementation to enable image segmentation capabilities.",
+            "Reference code: https://vision.cs.uwaterloo.ca/files/gco-v3.0.zip",
+            "",
+            "<h3>What I did",
+            "<boldfirst>Implemented K-Means algorithm to segment RGB values.",
+            "<boldfirst>Incorporated vectorization to optimize performance."
+        ],
+        year:"2021"
+    },
+    {
         title: "",
         subtitle:"",
         linktitle: "",

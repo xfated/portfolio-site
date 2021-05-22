@@ -16,5 +16,6 @@ export const MyInfo =
     resume:"/assets/KaiYang_Resume.pdf",
     linkedin: "https://www.linkedin.com/in/kai-yang-tay/",
     github: "https://github.com/xfated",
-    footer_quote:"Technicolor dream-notes."
+    footer_quote:"Technicolor dream-notes.",
+    update_time: "22/5/2021"
 }
