@@ -109,7 +109,7 @@ const Projects = (props) => {
                                 </ModalBody>
                                 <ModalFooter>
                                     <div className="ml-auto">
-                                        <cite>Completed in</cite> <strong>2020</strong>
+                                        <cite>Completed in</cite> <strong>{project.year}</strong>
                                     </div>
                                 </ModalFooter>
                             </Modal>

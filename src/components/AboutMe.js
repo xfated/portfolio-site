@@ -2,9 +2,7 @@ import React, { useEffect } from 'react';
 import Description from './Description';
 import Timeline from './Timeline';
 import Projects from './Projects';
-import * as Scroll from 'react-scroll';
-import { Navbar, Nav, NavItem } from 'reactstrap';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, Element, Events, scrollSpy } from 'react-scroll'
 import './AboutMe.css';
 
 const AboutMe = (props) => {

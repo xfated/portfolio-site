@@ -1,4 +1,5 @@
 export const ExpProjects = [
+/* Competitions */
     {
         title: "DSTA Brainhack 2020",
         subtitle: "Champion - Today I Learned (TIL) Artificial Intelligence (AI) Camp",
@@ -40,6 +41,7 @@ export const ExpProjects = [
             ],
         year: "2020"
     },
+/* Hackathons */
     {
         title: "iNTUition v7.0",
         subtitle:"TattleTale",
@@ -176,6 +178,114 @@ export const ExpProjects = [
             ],
         year: "2020"
     },
+/* Side projects */
+    {
+        title: "toGoListBot",
+        subtitle:"",
+        linktitle: "Try it out!",
+        category: "sideproject",
+        image:"assets/images/projects/togolist.jpg",
+        link:"https://t.me/toGoListBot",
+        briefdesc:"A helpful bot to help you organize information! Add items. Group em with tags. Fetch them again in future",
+        details:[
+            "<h3>Motivation",
+            "My girlfriend and I have a chat where we’d just send info on the places we’d want to go in the future (i.e. getting interested in some restaurants that others’ visited and posted on their insta stories). ",
+            "I felt, a Telegram bot could improve this process.",
+            "",
+            "<h3>Problems I wanted to solve",
+            "- Every time we chatted, the items get pushed up and it was a chore to scroll up to find the message (First World problems, I know). ",
+            "- Or if we wanted to change some information, the details for the place will be split, even with pinned messages.",
+            "- Did not want to manage multiple shared documents for each group of items (“Food”, “Brunch”, “Day outing”)",
+            "----> This bot can easily fetch with items using selected tags, and we can easily just edit the item tags if necessary!",
+            "",
+            "<h3>Features",
+            "- Store details of items (name, address, url, image, tags, notes)",
+            "- Use tags to group items (E.g. After which can use the tag “Food” to query for all food related places) ",
+            "- Fetch details of 1 or more items.",
+            "- Query items at random (can’t decide where to go for your next outing, just let the bot choose from one of your recorded places!)",
+            "",
+            "<h3>Other possibilities",
+            "You can use it to record anything for future reference! Since not all fields have to be filled in. Places are just the template I started with (thus fields like address was added)",
+            "<boldfirst>Examples :",
+            "- Youtube videos (add URL and Tag “Youtube”)",
+            "- Friends who owe you money (add amount in Notes, and Tag “Debt”)",
+            "- Simple To Do list (add item to list, delete when done)",
+            "",
+            "<h3>How to use",
+            "Bot can be found on telegram @toGoListBot",
+            "<boldfirst>Private message the bot to record for personal use.",
+            "<boldfirst>Add into a group to use within a chat."
+        ],
+        year:""
+    },
+    {
+        title: "Feasta",
+        subtitle:"",
+        linktitle: "Try it out!",
+        category: "sideproject",
+        image:"assets/images/projects/feasta.png",
+        link:"https://eatwhat.one",
+        briefdesc:"A service that helps you find places to eat",
+        details:[
+            "<h3>What is it?",
+            "A service to suggest food places (Singapore) based on a user input text.",
+            "Inspired by my indecisiveness when it comes to food, and the curiousity to try out new technologies.",
+            "",
+            "<h3>What went into its creation",
+            "<boldfirst>Front-end :",
+            "- React with Typescript for web app",
+            "- Firebase for hosting",
+            "- Firestore for data storage",
+            "",
+            "<boldfirst>Back-end :",
+            "- FastAPI endpoint",
+            "- Celery with RabbitMQ (broker) and redis (backend) for task queue",
+            "- TFServing for model inference",
+            "- NLP model for semantic search",
+            "- Google Kubernetes Engine for deployment"
+        ],
+        year:"2021"
+    },
+    {
+        title: "Texture Synthesis",
+        subtitle:"EE4212-Computer Vision Assignment",
+        linktitle: "Github Repo",
+        category: "sideproject",
+        image:"assets/images/projects/texture_synth.JPG",
+        link:"https://github.com/xfated/texture-synthesis",
+        briefdesc:"Texture Synthesis with Non-parametric Sampling",
+        details:[
+            "<h3>What is it?",
+            "An assigment as part of NUS EE4212 Computer Vision module",
+            "Matlab implementation based on the Efros & Leung algorithm proposed in https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf, synthesize textures by sampling from an initial texture.",
+            "",
+            "<h3>What I did",
+            "<boldfirst>Implemented algorithm from scratch.",
+            "<boldfirst>Implemented priority queue to optimize selection of next pixel.",
+            "<boldfirst>Incorporated vectorization to accelerate synthesis."
+        ],
+        year:"2021"
+    },
+    {
+        title: "Image Segmentation",
+        subtitle:"EE4212-Computer Vision Assignment",
+        linktitle: "Github Repo",
+        category: "sideproject",
+        image:"assets/images/projects/img_seg.jpg",
+        link:"https://github.com/xfated/graphcut_mrf",
+        briefdesc:"Use of K-Means algorithm and multilabel graph cut for image segmentation.",
+        details:[
+            "<h3>What is it?",
+            "An assigment as part of NUS EE4212 Computer Vision module.",
+            "Matlab implementation to utilize an external multilabel graph cut implementation to enable image segmentation capabilities.",
+            "Reference code: https://vision.cs.uwaterloo.ca/files/gco-v3.0.zip",
+            "",
+            "<h3>What I did",
+            "<boldfirst>Implemented K-Means algorithm to segment RGB values.",
+            "<boldfirst>Incorporated vectorization to optimize performance."
+        ],
+        year:"2021"
+    },
     {
         title: "Line2Image Generation",
         subtitle:"",
@@ -261,46 +371,6 @@ export const ExpProjects = [
             "<boldfirst>Integrated with Telegram's API to present the solution as a Telegram bot."
         ],
         year:"2020"
-    },
-    {
-        title: "Texture Synthesis",
-        subtitle:"EE4212-Computer Vision Assignment",
-        linktitle: "Github Repo",
-        category: "sideproject",
-        image:"assets/images/projects/texture_synth.JPG",
-        link:"https://github.com/xfated/texture-synthesis",
-        briefdesc:"Texture Synthesis with Non-parametric Sampling",
-        details:[
-            "<h3>What is it?",
-            "An assigment as part of NUS EE4212 Computer Vision module",
-            "Matlab implementation based on the Efros & Leung algorithm proposed in https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf, synthesize textures by sampling from an initial texture.",
-            "",
-            "<h3>What I did",
-            "<boldfirst>Implemented algorithm from scratch.",
-            "<boldfirst>Implemented priority queue to optimize selection of next pixel.",
-            "<boldfirst>Incorporated vectorization to accelerate synthesis."
-        ],
-        year:"2021"
-    },
-    {
-        title: "Image Segmentation",
-        subtitle:"EE4212-Computer Vision Assignment",
-        linktitle: "Github Repo",
-        category: "sideproject",
-        image:"assets/images/projects/img_seg.jpg",
-        link:"https://github.com/xfated/graphcut_mrf",
-        briefdesc:"Use of K-Means algorithm and multilabel graph cut for image segmentation.",
-        details:[
-            "<h3>What is it?",
-            "An assigment as part of NUS EE4212 Computer Vision module.",
-            "Matlab implementation to utilize an external multilabel graph cut implementation to enable image segmentation capabilities.",
-            "Reference code: https://vision.cs.uwaterloo.ca/files/gco-v3.0.zip",
-            "",
-            "<h3>What I did",
-            "<boldfirst>Implemented K-Means algorithm to segment RGB values.",
-            "<boldfirst>Incorporated vectorization to optimize performance."
-        ],
-        year:"2021"
     },
     {
         title: "",

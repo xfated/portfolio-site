@@ -1,8 +1,20 @@
 export const Experience = [
     {
+        title: "Data Engineer Intern (Video on Demand-Fundamental Technology)",
+        location: "ByteDance",
+        date: "May 2021 - Aug 2021",
+        shortdesc: "Developed solutions to support the Video Architecture team.",
+        description: "- Proposed and implemented data processing jobs to reduce storage requirements by a factor of 1000.\n" +
+                    "- Developed monitoring alerts using Bosun to supervise the stability of Kafka partitions. \n" +
+                    "- Created serverless functions to support video archive service\n" + 
+                    "- Backend development to enhance implementation of video deletion architecture.",
+        skills: "Golang, SQL",
+        logo: "assets/images/experiences/bytedance_logo.png"
+    },
+    {
         title: "Data Science Intern (Security)",
         location: "Shopee",
-        date: "Dec 2020 - Present",
+        date: "Dec 2020 - May 2021",
         shortdesc: "Involved in improving Know-Your-Customer (KYC) solutions.",
         description: "- Implemented and benchmarked deep learning models from research papers.\n" +
                     "- Assessed inference frameworks' performance: TensorRT, Apache TVM, ONNX Runtime. \n" +
